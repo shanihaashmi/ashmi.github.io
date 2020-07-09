@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment Module</title>
+    <style>
+    * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 25px;
+      }
+
+      p {
+        color: black;
+        font-size: 14px;
+      }
+
+      .boxing {
+        padding: 5px;
+      }
+
+      #chicken,
+      #beef,
+      #sushi {
+        background-color: grey;
+        border: 1px solid black;
+        padding: 10px;
+
+      }
+
+      .submenu {
+        float: right;
+        border: 1px solid black;
+        width: 100px;
+        padding: 5px 12px 5px 12px;
+        position: relative;
+        text-align: center;
+      
+   }
+
+      .content {
+        text-align: left;
+        padding: 5px;
+        clear: both;
+      }
+
+      #bigbox {
+        position: relative;
+        width: 100%;
+      }
+
+      #chicken-cont {
+        background-color: burlywood;
+      }
+
+      #beef-cont {
+        background-color: chartreuse;
+      }
+
+      #sushi-cont {
+        background-color: pink;
+      }
+
+      @media(min-width: 992px) {
+        .boxing {
+          width: 33.33%;
+          float: left;
+
+        }
+
+
+      }
+
+      @media(min-width: 768px) and (max-width: 991px) {
+
+        .boxing1,
+        .boxing2 {
+          width: 50%;
+          float: left;
+        }
+
+        .boxing3 {
+          width: 100%;
+          float: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Our Menu</h1>
+    <div id="bigbox">
+      <div class="boxing boxing1">
+        <div id="chicken">
+          <p class="submenu" id="chicken-cont">Chicken</p>
+          <p class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+          </p>
+        </div>
+      </div>
+      <div class="boxing boxing2">
+        <div id="beef">
+          <p class="submenu" id="beef-cont">Beef</p>
+          <p class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+          </p>
+        </div>
+      </div>
+      <div class="boxing boxing3">
+        <div id="sushi">
+          <p class="submenu" id="sushi-cont">Sushi</p>
+          <p class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
