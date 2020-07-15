@@ -1,128 +1,68 @@
-
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Assignment Module</title>
-    <style>
-    * {
-        font-family: sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      h1 {
-        text-align: center;
-        padding: 25px;
-      }
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-      p {
-        color: black;
-        font-size: 14px;
-      }
-
-      .boxing {
-        padding: 5px;
-      }
-
-      #chicken,
-      #beef,
-      #sushi {
-        background-color: grey;
-        border: 1px solid black;
-        padding: 10px;
-
-      }
-
-      .submenu {
-        float: right;
-        border: 1px solid black;
-        width: 100px;
-        padding: 5px 12px 5px 12px;
-        position: relative;
-        text-align: center;
-      
-   }
-
-      .content {
-        text-align: left;
-        padding: 5px;
-        clear: both;
-      }
-
-      #bigbox {
-        position: relative;
-        width: 100%;
-      }
-
-      #chicken-cont {
-        background-color: burlywood;
-      }
-
-      #beef-cont {
-        background-color: chartreuse;
-      }
-
-      #sushi-cont {
-        background-color: pink;
-      }
-
-      @media(min-width: 992px) {
-        .boxing {
-          width: 33.33%;
-          float: left;
-
-        }
-
-
-      }
-
-      @media(min-width: 768px) and (max-width: 991px) {
-
-        .boxing1,
-        .boxing2 {
-          width: 50%;
-          float: left;
-        }
-
-        .boxing3 {
-          width: 100%;
-          float: left;
-        }
-      }
-    </style>
+    <title>Boostrap Starter Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg"></a>
 
-  <body>
-    <h1>Our Menu</h1>
-    <div id="bigbox">
-      <div class="boxing boxing1">
-        <div id="chicken">
-          <p class="submenu" id="chicken-cont">Chicken</p>
-          <p class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
-          </p>
-        </div>
-      </div>
-      <div class="boxing boxing2">
-        <div id="beef">
-          <p class="submenu" id="beef-cont">Beef</p>
-          <p class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
-          </p>
-        </div>
-      </div>
-      <div class="boxing boxing3">
-        <div id="sushi">
-          <p class="submenu" id="sushi-cont">Sushi</p>
-          <p class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
+          <div class="navbar-brand">
+              <a href="index.html"><h1>Food, LLC</h1></a>
+          </div>
 
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div> <!-- remember to close the div! or else the layout will be wrong -->
+
+        <div id="collapsable-nav" class="collapse nav-bar-collapse">
+          <!-- nav navbar-nav are components of navigation bar, turns ul to navigation; navbar-right: pull it to the right -->
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="menu-categories.html">
+                <br class="hidden-xs">Chicken</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#">
+                <br class="hidden-xs">Beef</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#">
+                <br class="hidden-xs">Sushi</a>
+            </li>
+          </ul>
+        </div> <!-- End of id="collapsable-nav" -->
+
+      </div> <!--End of container div-->
+    </nav>
+  </header>
+  <h2 class="text-center">Our Menu</h2>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
 </html>
